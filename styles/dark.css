@@ -10,3 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+.text__title {
+  background-color: var(--accent-color, #FF0070);
+  color: var(--title-color, #000028;)
+}

@@ -2,4 +2,88 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  
+  font-family: var(--main-font, monospace);
+
+}
+
+@media screen and (min-width: 375px) {
+  .page{
+    padding: 10px;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .page {
+    padding: 20px; /* Используйте 20px для экранов шириной 1024px и больше */
+  }
+}
+
+.decorated-item::before {
+  color: var(--accent-color, #FF0070);
+  content: 'REC';
+  text-align: center;
+  
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+  position: relative;
+}
+
+.decorated-item::after {
+  content: '';
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 10px;
+  background-image: url('/images/Ellipse\ 4.png');
+  background-size: contain; /* Размер изображения будет подстроен, чтобы уместиться в блок */
+  position: absolute; /* Абсолютное позиционирование относительно .decorated-item */
+  top: 8px;
+}
+
+.heading {
+  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+}
+
+.main__title {
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+}
+
+/* .content__paragraph:not(:first-of-type) {
+  margin-block-start: 0.5em;
+} */
+
+/* .text__title {
+  background-color: var(--accent-color, #FF0070);
+  color: var(--title-color, #000028;)
+} */
+
+.section__title {
+  color: var(--accent-color, #FF0070);
+
+}
+
+.content-section {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  gap: 19.93px;
+  box-sizing: border-box;
+  margin-top: calc(40px + (60 - 40) * (100vw - 375px) / (1024 - 375));
+}
+.content-section__title {
+  grid-column: span 1; /* Занимает 1 фракцию в первой колонке */
+}
+
+.content__text-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  grid-column: span 2; /* Занимают 2 фракции во второй колонке */
+  
+}
+.text__title {
+  grid-column: span 2;
 }
