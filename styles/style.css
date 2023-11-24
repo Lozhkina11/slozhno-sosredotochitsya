@@ -4,27 +4,38 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   
   font-family: var(--main-font, monospace);
-
+  font-size: 18px;
 }
 
-@media screen and (min-width: 375px) {
+@media (min-width: 375px) {
   .page{
     padding: 10px;
   }
   
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 768px) {
   .page {
-    padding: 20px; /* Используйте 20px для экранов шириной 1024px и больше */
+    padding: 20px;
   }
 }
 
+.decorated-zone {
+  /* display: flex;
+  width: 1024px;
+  height: 768px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0; */
+}
+
 .decorated-item::before {
-  color: var(--accent-color, #FF0070);
+  color: var(--accent-color);
   content: 'REC';
   text-align: center;
-  
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -50,36 +61,73 @@
 
 .main__title {
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  text-shadow: 4px 4px 0px var(--accent-color);
+  color: var(--main-color-for-title);
+  line-height: 82.5%;
+  font-style: normal;
+  font-weight: 700;
+  vertical-align: center;
 }
 
-/* .content__paragraph:not(:first-of-type) {
-  margin-block-start: 0.5em;
-} */
-
-/* .text__title {
-  background-color: var(--accent-color, #FF0070);
-  color: var(--title-color, #000028;)
-} */
-
 .section__title {
-  color: var(--accent-color, #FF0070);
-  /* grid-column: span 3; */
-
+  color: var(--accent-color);
 }
 
 .section {
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 19.93px;
   box-sizing: border-box;
+}
+
+@media (max-width: 355px) {
+  .section {
+    min-width: 355px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    min-width: 768px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    min-width: 1024px;
+  }
 }
 
 /* первая секция */
 .content-section {
   margin-top: calc(40px + (60 - 40) * (100vw - 375px) / (1024 - 375));
   grid-template-areas: 
-  "section__title content__text-block content__text-block"
-  
+  "section__title content__text-block content__text-block";
+  height: clamp(648px, 768px, 1024px);
+}
+
+@media (min-width: 355px) {
+  .content-section {
+    max-height: 949px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content-section {
+    max-height: 648px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content-section {
+    max-height: 508px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-section {
+    display: block;
+  }
 }
 
 .content-section__title {
@@ -93,50 +141,128 @@
   align-items: flex-start;
   grid-column: span 2;
   grid-area: content__text-block;
+  box-sizing: border-box;
 }
 
 .text__title {
   grid-column: span 1;
   grid-area: text__title;
   width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  box-sizing:border-box;
+  margin-bottom: 10px;
+}
+
+.text__title:last-child {
+  margin-bottom: 20px;
 }
 
 .content__paragraph {
   grid-area: content__paragraph;
+  color: var(--text-color-for-bt);
 }
 
 /* вторая секция */
 .attention-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  
   margin-top: calc(50px + (80 - 50) * (100vw - 375px) / (1024 - 375));
   grid-template-areas: 
   "section__title . . "
-  "text__title text__title text__title"
-  "content__paragraph content__paragraph content__paragraph";
+  "text__title . ."
+  "content__paragraph . .";
 }
 
-/* .attention__text-block {
+@media (min-width: 355px) {
+  .attention-section {
+    max-height: 1119px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .attention-section {
+    max-height: 498px;
+  }
+}
+
+.attention__text-block {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   grid-column: span 3;
-} */
-.attention__text-block {
-  display: grid;  /* Используйте grid вместо flex для вложенных элементов */
-  grid-template-columns: span 3;
-  grid-template-rows: auto auto auto;  /* Установите нужные размеры строк */
-  grid-template-areas:
-    "section__title . . "
-    "text__title . ."
-    /* "content__paragraph . . "; */
 }
 
+@media (max-width: 767px) {
+  .attention__text-block  {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .text__title {
   grid-column: span 1;
+  color: var(--title-color-for-bt);
+}
+
+.content__paragraph_block {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.content__paragraph_block:last-child {
+  margin-right: 0;
 }
 
 .content__paragraph {
   grid-column: span 1;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+/* треттья секция  */
+.advice-section {
+  margin-top: calc(50px + (80 - 50) * (100vw - 375px) / (1024 - 375));
+  grid-template-areas: 
+  "section__title content__text-block content__text-block"
+}
+
+@media (min-width: 355px) {
+  .advice-section {
+    max-height: 1737px;
+  }
+}
+
+@media (max-width: 767px) {
+  .advice-section {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .advice-section {
+    max-height: 1296px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .advice-section {
+    max-height: 1015px;
+  }
+}
+
+.advice-section .content__text-block .text__title:first-child {
+  margin-bottom: 20px;
+}
+
+/* четвертая секция */
+.pic-section {
+  display: grid;
+  grid-template-columns: repeat(3, 315px);
+  
 }
