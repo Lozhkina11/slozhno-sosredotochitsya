@@ -30,6 +30,9 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0; */
+  background-image: url(/images/cover-image.png);
+  height: 768px;
+  width: calc(100%-40px);
 }
 
 .decorated-item::before {
@@ -153,6 +156,7 @@
   line-height: 23.4px;
   box-sizing:border-box;
   margin-bottom: 10px;
+  color: var(--title-color-for-bt);
 }
 
 .text__title:last-child {
@@ -202,10 +206,7 @@
   }
 }
 
-.text__title {
-  grid-column: span 1;
-  color: var(--title-color-for-bt);
-}
+
 
 .content__paragraph_block {
   display: flex;
@@ -262,7 +263,103 @@
 
 /* четвертая секция */
 .pic-section {
+  margin-top: calc(50px + (80 - 50) * (100vw - 375px) / (1024 - 375));
+}
+
+@media (min-width: 355px) {
+  .pic-section {
+    max-height: 1400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pic-section {
+    max-height: 823px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pic-section {
+    max-height: 1091px;
+  }
+}
+@media (max-width: 767px) {
+  .pic-section {
+    display: block;
+  }
+}
+
+.portfolio_pics {
   display: grid;
-  grid-template-columns: repeat(3, 315px);
-  
+  box-sizing: border-box;
+}
+
+@media (max-width: 375px) {
+  .portfolio_pics {
+    grid-gap: 10px;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio_pics {
+    grid-gap: 20px;
+  }
+}
+
+.portfolio_pics div:nth-child(1) {
+  grid-column: 1/3;
+}
+
+.portfolio_pics div:nth-child(2) {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+.portfolio_pics div:nth-child(3) {
+  grid-column: 1/1;
+  grid-row: 2/4;
+}
+
+.portfolio_pics div:nth-child(5) {
+  grid-column: 2/4;  /*или 2/4*/
+  grid-row: 3/4;
+}
+
+.portfolio_pics div:nth-child(4) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* подвал */
+.footer-section {
+  margin-top: calc(50px + (80 - 50) * (100vw - 375px) / (1024 - 375));
+}
+
+@media (min-width: 355px) {
+  .footer-section {
+    max-height: 647px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-section {
+    max-height: 984px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-section {
+    max-height: 728px;
+  }
+}
+
+.footer {
+  text-align: center;
 }
