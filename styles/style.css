@@ -16,6 +16,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  top: 0;
+  align-content: flex-start;
 }
 
 .decorated-zone {
@@ -54,23 +56,7 @@
 } */
 
 /* меню */
-.header__theme-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-}
 
-.header__theme-menu-list {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.header__theme-menu-item {
-  margin-right: 10px;
-}
 
 /* заголовки в секции header */
 .heading {
@@ -110,6 +96,7 @@
 }
 .header .box-title .text__title {
   font-weight: 700;
+  margin-bottom: 0px;
   width: clamp(355px, 100%, 491px);
   margin-top: calc(114px + (162 - 114) * ((100vw - 355px) / (1024 - 355)));
 }
