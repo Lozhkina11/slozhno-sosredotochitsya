@@ -8,4 +8,8 @@
   --title-color-for-bt: #000028;
   --text-color-for-bt: #F1B2CE;
   --main-color-for-title: #DB00FF;
+  --min-padding: 10px;
+  --max-padding: 20px;
+  --page-padding: clamp(var(--min-padding), var(--min-padding) + (var(--max-padding) - var(--min-padding)) * ((100vw - 355px) / (1024 - 355)), var(--max-padding));
+  
 }
