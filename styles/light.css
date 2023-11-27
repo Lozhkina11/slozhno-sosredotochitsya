@@ -14,3 +14,15 @@
   */
   
 }
+.decorated-zone {
+  background-image: url(/images/cover-image-light.png);
+  /* height: 768px; */
+  width: calc(100% + 40px);
+  min-height: 648px;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  margin-top: -20px;
+  margin-left: -20px;
+  box-sizing:border-box;
+}

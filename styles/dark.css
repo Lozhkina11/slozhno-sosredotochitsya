@@ -16,3 +16,16 @@
   background-color: var(--accent-color, #FF0070);
   color: var(--title-color, #000028;)
 }
+
+.decorated-zone {
+  background-image: url(/images/cover-image-dark.png);
+  /* height: 768px; */
+  width: calc(100% + 40px);
+  min-height: 648px;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  margin-top: -20px;
+  margin-left: -20px;
+  box-sizing:border-box;
+}

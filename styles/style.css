@@ -19,6 +19,8 @@
   top: 0;
   align-content: flex-start; */
   text-align: center;
+  min-height: 648px;
+  max-height: 1024px;
 }
 
 .decorated-zone {
