@@ -23,6 +23,12 @@
   max-height: 1024px;
 }
 
+@media (min-width: 768px) {
+  .header  {
+    height: 1024px;;
+  }
+}
+
 .decorated-zone {
   background-image: url(/images/cover-image.png);
   /* height: 768px; */
@@ -34,6 +40,7 @@
   margin-top: -20px;
   margin-left: -20px;
   box-sizing:border-box;
+  margin-bottom: 20px;
 }
 
 /* .decorated-item::before {
