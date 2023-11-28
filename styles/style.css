@@ -359,7 +359,7 @@
 /* четвертая секция */
 .pic-section {
   box-sizing:border-box;
-  /* height: 1091px; */
+  height: 1091px;
   min-height: 823px;
   margin-top: calc(50px + (80 - 50) * (100vw - 375px) / (1024 - 375));
 }
