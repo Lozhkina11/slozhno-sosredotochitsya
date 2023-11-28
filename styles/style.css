@@ -358,39 +358,53 @@
 
 /* четвертая секция */
 .pic-section {
-  height: 1091px;
-  /* min-height: 1091px; */
+  box-sizing:border-box;
+  /* height: 1091px; */
+  min-height: 823px;
   margin-top: calc(50px + (80 - 50) * (100vw - 375px) / (1024 - 375));
 }
 
-@media (min-width: 355px) {
+@media (max-width: 375px) {
   .pic-section {
-    max-height: 1400px;
+    height: 1400px; /* Высота для экрана 375x668px */
+  }
+ 
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .pic-section {
+    height: 100%; /* Высота для экрана 768x1024px */
+  }
+  .portfolio_pics {
+    gap: 10px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .pic-section {
-    max-height: 823px;
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    height: 100%;
   }
-}
-
-@media (min-width: 1024px) {
-  .pic-section {
-    max-height: 1091px;
+  .portfolio_pics {
+    gap: 20px;
   }
 }
 
 .portfolio_pics {
   display: grid;
   box-sizing: border-box;
-  gap: clamp(10px, 5vw, 20px);
+  gap: clamp(10px, 5vw, 20px)
 }
 
-@media (max-width: 375px) {
+
+@media (max-width: 767px) {
   .portfolio_pics {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .portfolio_pics div {
+    width: 100%;
+    gap: 10px;
   }
 }
 
@@ -418,11 +432,6 @@
   grid-row: 2/3;
 }
 
-.image {
-  /* margin-top: clamp(10px, 5vw, 20px); /* Отступ сверху */
-  /* margin-bottom: clamp(10px, 5vw, 20px); */
-}
-
 .pic {
   width: 100%;
   height: 100%;
@@ -431,8 +440,6 @@
 
 /* подвал */
 .footer-section {
-  margin-top: calc(50px + (80 - 50) * (100vw - 375px) / (1024 - 375));
-  /* min-height: 768px; */
   min-height: 667px;
   display: flex;
   flex-direction: column;
@@ -445,6 +452,7 @@
   .footer-section {
     max-height: 647px;
     padding: 10px;
+    margin-top: 40px;
   }
 }
 
@@ -452,6 +460,7 @@
   .footer-section {
     max-height: 984px;
     padding: 20px;
+    margin-top: 60px;
   }
 }
 
@@ -463,5 +472,26 @@
 
 .footer {
   text-align: center;
- 
 }
+
+
+
+
+/* @media (max-width: 355px) {
+  .pic-section {
+    max-height: 1400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pic-section {
+    min-height: 823px;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .pic-section {
+    max-height: 1091px;
+  }
+} */
