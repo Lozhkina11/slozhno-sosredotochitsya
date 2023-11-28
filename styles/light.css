@@ -4,8 +4,10 @@
   переключая тему
 */
 :root {
+  --accent-color: #ff8dcb;
   --title-color-for-lt: #353430;
   --background-color-for-lt: #FFEEF7;
+  --main-color-for-title: #FFC2E6;
 }
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
@@ -14,14 +16,25 @@
   */
   
 }
-.decorated-zone {
+.page.theme_light .decorated-zone {
   background-image: url(/images/cover-image-light.png);
   /* height: 768px; */
   width: calc(100% + 40px);
+  /* min-height: 648px; */
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
   margin-top: -20px;
   margin-left: -20px;
   box-sizing:border-box;
+}
+
+.page.theme_light .main__title {
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  text-shadow: 4px 4px 0px var(--accent-color);
+  color: var(--main-color-for-title, #FFC2E6);
+  /* line-height: 82.5%; */
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
 }

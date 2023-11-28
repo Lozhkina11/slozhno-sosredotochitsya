@@ -5,6 +5,7 @@
 */
 :root {
   --background-color-for-dt:#000028;
+  /* --main-color-for-title: #DB00FF; */
 }
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
@@ -12,12 +13,12 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
-.text__title {
+.page.theme_dark .text__title {
   background-color: var(--accent-color, #FF0070);
-  color: var(--title-color, #000028;)
+  color: var(--title-color, #000028);
 }
 
-.decorated-zone {
+.page.theme_dark .decorated-zone {
   background-image: url(/images/cover-image-dark.png);
   /* height: 768px; */
   width: calc(100% + 40px);
@@ -28,4 +29,13 @@
   margin-top: -20px;
   margin-left: -20px;
   box-sizing:border-box;
+}
+.page.theme_dark .main__title {
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  text-shadow: 4px 4px 0px var(--accent-color);
+  color: var(--main-color-for-title, #DB00FF);
+  /* line-height: 82.5%; */
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
 }
