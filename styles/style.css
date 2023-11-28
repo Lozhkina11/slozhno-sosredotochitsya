@@ -433,22 +433,25 @@
 .footer-section {
   margin-top: calc(50px + (80 - 50) * (100vw - 375px) / (1024 - 375));
   /* min-height: 768px; */
-  min-height: 647px;
+  min-height: 667px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing:border-box;
 }
 
 @media (min-width: 375px) {
   .footer-section {
     max-height: 647px;
+    padding: 10px;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .footer-section {
     max-height: 984px;
+    padding: 20px;
   }
 }
 
