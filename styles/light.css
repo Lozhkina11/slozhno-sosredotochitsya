@@ -8,20 +8,21 @@
   --title-color-for-lt: #353430;
   --background-color-for-lt: #FFEEF7;
   --main-color-for-title: #FFC2E6;
+  --cover-img: url('/images/cover-image-light.png');
 }
-.page.theme_light {
+.page.theme_light {}
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
   
-}
+/* }
 .page.theme_light .decorated-zone {
   background-image: url(/images/cover-image-light.png);
   /* height: 768px; */
-  width: calc(100% + 40px);
+  /* width: calc(100% + 40px); */
   /* min-height: 648px; */
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
   box-sizing: border-box;
   margin-top: -20px;
@@ -34,7 +35,7 @@
   text-shadow: 4px 4px 0px var(--accent-color);
   color: var(--main-color-for-title, #FFC2E6);
   /* line-height: 82.5%; */
-  font-style: normal;
+  /* font-style: normal;
   font-weight: 700;
   text-align: left;
-}
+}  */ 

@@ -4,8 +4,15 @@
   переключая тему
 */
 :root {
-  --background-color-for-dt:#000028;
+  --background-color: #000028;
   /* --main-color-for-title: #DB00FF; */
+  --accent-color: #ff0070;
+  --main-font: 'IBM Plex mono';
+  --title-color-for-bt: #000028;
+  --text-color-for-bt: #F1B2CE;
+  --main-color-for-title: #DB00FF;
+  --cover-img: url('/images/cover-image-dark.png');
+
 }
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
@@ -18,10 +25,10 @@
   color: var(--title-color, #000028);
 }
 
-.page.theme_dark .decorated-zone {
+/* .page.theme_dark .decorated-zone {
   background-image: url(/images/cover-image-dark.png);
   /* height: 768px; */
-  width: calc(100% + 40px);
+  /* width: calc(100% + 40px);
   min-height: 648px;
   background-size: cover;
   background-position: center;
@@ -35,7 +42,7 @@
   text-shadow: 4px 4px 0px var(--accent-color);
   color: var(--main-color-for-title, #DB00FF);
   /* line-height: 82.5%; */
-  font-style: normal;
+  /* font-style: normal;
   font-weight: 700;
   text-align: left;
-}
+} */ 
