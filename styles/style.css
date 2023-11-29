@@ -173,7 +173,7 @@
   }
 } */
 
-.section__title {
+/* .section__title {
   color: var(--accent-color);
   width: 315px;
 }
@@ -188,7 +188,7 @@
   .section__title {
     width: 236px;
   }
-}
+} */
 
 /* @media (max-width: 1024px){
   .section__title {
