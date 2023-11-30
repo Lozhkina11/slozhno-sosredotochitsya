@@ -3,16 +3,29 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root {
-  --background-color: #000028;
-  --main-color-for-title: #DB00FF;
+:root.theme-dark {
   --accent-color: #ff0070;
+  --color-for-shadow: #FF0070;
   --main-font: 'IBM Plex mono';
-  --title-color-for-bt: #000028;
-  --text-color-for-bt: #F1B2CE;
+  --title-color: #000028;
+  --text-color: #F1B2CE;
+  --main-color-for-title: #DB00FF;
+  --background-color: #000028;
   /* --cover-img: url('/images/cover-image-dark.png'); */
 
 }
+@media (prefers-color-scheme: dark) {
+  :root{
+    --accent-color: #ff0070;
+    --color-for-shadow: #FF0070;
+    --main-font: 'IBM Plex mono';
+    --title-color: #000028;
+    --text-color: #F1B2CE;
+    --main-color-for-title: #DB00FF;
+    --background-color: #000028;
+  }
+}
+
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -23,30 +36,45 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  
+  background-color: var(--background-color);
+
+  --accent-color: #ff0070;
+  --color-for-shadow: #FF0070;
+  --main-font: 'IBM Plex mono';
+  --title-color: #000028;
+  --text-color: #F1B2CE;
+  --main-color-for-title: #DB00FF;
+  --background-color: #000028;
+  --hover: rgba(255, 0, 112, 0.40);
+
 }
-.page.theme_dark .text__title {
+
+.page {
+  background-color: var(--background-color);
+  /* background-image: url(/images/cover-image-dark.png); */
+}
+
+.page.theme_dark .header {
+  background-image: url(/images/cover-image-dark.png);
+  background-position: center;
+  block-size: center;
+}
+
+.main__title {
+  text-shadow: 4px 4px 0px var(--color-for-shadow,  #FF0070);
+  color: var(--main-color-for-title, #DB00FF);
+}
+
+.text__title {
   background-color: var(--accent-color, #FF0070);
   color: var(--title-color, #000028);
 }
 
-/* .page.theme_dark .decorated-zone {
-  background-image: url(/images/cover-image-dark.png);
-  /* height: 768px; */
-  /* width: calc(100% + 40px);
-  min-height: 648px;
-  background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
-  margin-top: -20px;
-  margin-left: -20px;
-  box-sizing:border-box;
+.title-decor {
+  color: var(--title-color, #000028);
 }
-.page.theme_dark .main__title {
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-  text-shadow: 4px 4px 0px var(--accent-color);
-  color: var(--main-color-for-title, #DB00FF);
-  /* line-height: 82.5%; */
-  /* font-style: normal;
-  font-weight: 700;
-  text-align: left;
-} */ 
+
+.content__paragraph {
+  color: var(--text-color, #F1B2CE);
+}
