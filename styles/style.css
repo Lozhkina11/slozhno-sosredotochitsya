@@ -125,6 +125,7 @@
   text-align: center;
   font-style: normal;
   font-weight: 400;
+  
 }
 
 /* кнопки */
@@ -134,6 +135,7 @@
   padding: 0 13px;
   background-color: inherit;
   border: none;
+  text-transform: lowercase;
 }
 
 .header__theme-menu-button:hover {
