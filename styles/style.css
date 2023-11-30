@@ -167,12 +167,13 @@
 }
 
 .box-text {
-  display: flex;
+  /* display: flex; */
   /* flex-direction: column; */
   margin-left: auto;
   width: 491px;
-  align-items: center;
-  justify-content: center;
+  margin-top: 114px;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 /* .header .main__title {
