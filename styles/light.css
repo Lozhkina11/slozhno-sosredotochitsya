@@ -8,9 +8,15 @@
   --title-color-for-lt: #353430;
   --background-color-for-lt: #FFEEF7;
   --main-color-for-title: #FFC2E6;
-  --cover-img: url('/images/cover-image-light.png');
+  /* --cover-img: url('/images/cover-image-light.png'); */
 }
-.page.theme_light {}
+.page.theme_light {
+  background-image: url(/images/cover-image-light.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
