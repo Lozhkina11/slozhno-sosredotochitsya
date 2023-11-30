@@ -120,9 +120,33 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: row;
+  gap: 23px;
+  color: var(--accent-color);
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
 }
 
-.header__theme-menu-list {
+/* кнопки */
+.header__theme-menu-button{
+  width: 70px;
+  height: 23px;
+  padding: 0 13px;
+  background-color: inherit;
+  border: none;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:focus {
+  text-decoration: underline;
 }
 
 
