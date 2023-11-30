@@ -162,7 +162,8 @@
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: flex-end;
+  /* align-items: flex-end; */
+  align-items: center;
 }
 
 .box-text {
@@ -171,6 +172,7 @@
   margin-left: auto;
   width: 491px;
   align-items: center;
+  justify-content: center;
 }
 
 /* .header .main__title {
