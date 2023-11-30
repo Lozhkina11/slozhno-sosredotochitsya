@@ -25,9 +25,9 @@
   display: grid;
   grid-template-columns: repeat(1, 3fr);
   grid-template-rows: repeat(3, 1fr);
-  align-items: start;
+  /* align-items: start; */
   padding: 20px;
-  align-items: start;
+  align-items: stretch;
 
   /* align-items: center;
   justify-items: center; */
@@ -166,9 +166,10 @@
 
 .box-text {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   margin-left: auto;
   width: 491px;
+  align-items: center;
 }
 
 /* .header .main__title {
