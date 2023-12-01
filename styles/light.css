@@ -82,3 +82,7 @@
 .page .theme_light .decorated-item__circle {
   background-color: var(--background-color, #FFF1F7);
 }
+
+.section__title {
+  color: var(--text-color, #353430);
+}
