@@ -40,6 +40,7 @@
   --background-color: #FFF1F7;
   background-color: var(--background-color);
   --color-for-button: #353430;
+  
 }
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -79,10 +80,15 @@
   outline: 1px solid var(--color-for-button,#353430);
 }
 
-.page .theme_light .decorated-item__circle {
-  background-color: var(--background-color, #FFF1F7);
+.theme_light .decorated-item__text {
+  display: none;
+}
+
+.theme_light .decorated-item__circle {
+  display: none;
 }
 
 .section__title {
   color: var(--text-color, #353430);
 }
+

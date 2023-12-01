@@ -33,7 +33,7 @@
   grid-template-columns: repeat(1, 3fr);
   grid-template-rows: repeat(3, 1fr);
   /* align-items: start; */
-  padding: 20px;
+  padding: 10px;
   align-items: stretch;
   min-height: 668px;
   height: 100vh;
@@ -84,6 +84,7 @@
 .decorated-item__text {
   text-transform: capitalize;
   color: #ff0070;
+  /* content: "REC"; */
 }
 
 .decorated-item::before {
@@ -173,6 +174,14 @@
 /* .header__theme-menu-button:focus-visible {
 
 } */
+
+.theme_auto .decorated-item__text {
+  display: none;
+}
+
+.theme_auto .decorated-item__circle {
+  display: none;
+}
 
 /* заголовки в секции header */
 
@@ -542,3 +551,4 @@
 .footer {
   text-align: center;
 }
+
