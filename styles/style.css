@@ -33,7 +33,7 @@
   grid-template-columns: repeat(1, 3fr);
   grid-template-rows: repeat(3, 1fr);
   /* align-items: start; */
-  padding: 10px;
+  padding: 20px;
   align-items: stretch;
   min-height: 668px;
   height: 100vh;
@@ -320,6 +320,11 @@
   color: var(--text-color);
   overflow-wrap: break-word;
   /* min-width: 315px; */
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
 }
 
 .link {
@@ -389,14 +394,7 @@
   margin-right: 0;
 }
 
-.content__paragraph {
-  /* grid-column: span 1; */
-  margin-bottom: 20px;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 23.4px;
-}
+
 
 /* .attention__text-block {
   flex-wrap: wrap;
