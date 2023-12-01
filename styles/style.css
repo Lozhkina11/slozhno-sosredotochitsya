@@ -71,7 +71,7 @@
   box-sizing: border-box;
   margin-top: -20px;
   margin-left: -40px;
-  box-sizing: border-box;
+
   margin-bottom: 20px;
   
 }
@@ -80,28 +80,35 @@
 .decorated-item {
   display: flex;
   position: relative;
+  /* margin-left: 3px; */
+  align-items: center;
+}
+
+.decorated-item__text {
+  text-transform: capitalize;
   color: #ff0070;
 }
 
 .decorated-item::before {
   position: absolute;
   content: "";
-  display: block;
+  display: flex;
   top: 10px;
   right: 10px;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
-  text-transform: capitalize;
-  margin-left: 3px;
+  
+  
  
 }
 
 .decorated-item::after {
   position: absolute;
+  display: flex;
   content: "";
-  display: block;
+  
   /* display: inline-block; */
   bottom: -653px;
   left: -974px;
@@ -110,6 +117,19 @@
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color, #ff0070);
 }
+
+.decorated-item__circle {
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  background-color: var(--accent-color);
+  filter: drop-shadow(0px 0px 4px #FF0070);
+  margin-left: 3px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+}
+
 
 /* .decorated-item::after { */
   /* color: var(--accent-color);
@@ -174,12 +194,16 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--color-for-button);
 }
 
 .header__theme-menu-button:focus {
   text-decoration: underline;
 }
+
+/* .header__theme-menu-button:focus-visible {
+
+} */
 
 /* заголовки в секции header */
 
@@ -194,9 +218,9 @@
   line-height: 82.5%;
   font-style: normal;
   font-weight: 700;
-  text-align: left;
+  /* text-align: left; */
   /* min-width: 759px; */
-  text-align: center;
+  /* text-align: center; */
   margin-left: 0;
 }
 
@@ -381,9 +405,21 @@
   /* min-width: 315px; */
 }
 
+.link {
+  text-shadow:2px 2px 0px var(--accent-color);
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:focus-visible {
+  outline: 1 px solid red;
+}
+
 /* -------------------вторая секция --------------------------*/
 .attention-section {
-  margin-top: calc(50px + (80 - 50) * (100vw - 375px) / (1024 - 375));
+  margin-top: 80px;
   grid-template-areas:
     "section__title . . "
     "text__title . ."
@@ -398,12 +434,15 @@
   grid-column: span 3;
   width: 100%;
   box-sizing: border-box;
+
 }
+
 @media (max-width: 821px) {
   .attention__text-block {
     display: flex;
     flex-direction: column;
     width: 100%;
+    flex-wrap: wrap;
   }
   .content__paragraph {
     grid-column: span 1;
@@ -411,14 +450,17 @@
   .content__paragraph_block {
     margin-right: 0; /* Избегайте отступов справа */
   }
-  .attention__text-block {
-     flex-wrap: wrap;
 }
+
+@media (max-width: 375px){
+  .attention-section {
+    margin-top: 50px;
+  }
 }
+
 .attention__text-block .content__paragraph_block {
   width: 100%;
 }
-
 
 .content__paragraph_block {
   display: flex;
@@ -446,7 +488,7 @@
 
 /* --------------треттья секция -------------------- */
 .advice-section {
-  margin-top: calc(50px + (80 - 50) * (100vw - 375px) / (1024 - 375));
+  margin-top: 80px;
   grid-template-areas: "section__title content__text-block content__text-block";
   /* min-height: 1015px; */
 }
@@ -454,6 +496,12 @@
 @media (min-width: 355px) {
   .advice-section {
     max-height: 1737px;
+  }
+}
+
+@media (max-width: 375px){
+  .advice-section {
+    margin-top: 50px;
   }
 }
 
@@ -469,7 +517,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .advice-section {
     max-height: 1015px;
   }
@@ -495,14 +543,17 @@
   box-sizing: border-box;
   height: 1091px;
   min-height: 823px;
-  margin-top: calc(50px + (80 - 50) * (100vw - 375px) / (1024 - 375));
+  margin-top: 80px;
 }
+
 
 @media (max-width: 375px) {
   .pic-section {
     height: 1400px; /* Высота для экрана 375x668px */
+    margin-top: 50px;
   }
 }
+
 
 @media (min-width: 376px) and (max-width: 768px) {
   .pic-section {
@@ -580,9 +631,10 @@
   box-sizing: border-box;
   min-height: 668px;
   height: 100vh;
+  
 }
 
-@media (min-width: 375px) {
+/* @media (min-width: 375px) {
   .footer-section {
     height: 647px;
     padding: 10px;
@@ -602,7 +654,7 @@
   .footer-section {
     height: 728px;
   }
-}
+} */
 
 .footer {
   text-align: center;

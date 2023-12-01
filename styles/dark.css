@@ -12,6 +12,7 @@
   --main-color-for-title: #DB00FF;
   --background-color: #000028;
   /* --cover-img: url('/images/cover-image-dark.png'); */
+  --color-for-button:#FF0070;
 
 }
 @media (prefers-color-scheme: dark) {
@@ -23,6 +24,7 @@
     --text-color: #F1B2CE;
     --main-color-for-title: #DB00FF;
     --background-color: #000028;
+    --color-for-button:#FF0070;
   }
 }
 
@@ -47,6 +49,7 @@
   --main-color-for-title: #DB00FF;
   --background-color: #000028;
   --hover: rgba(255, 0, 112, 0.40);
+  --color-for-button:#FF0070;
 
 }
 
@@ -77,4 +80,18 @@
 
 .content__paragraph {
   color: var(--text-color, #F1B2CE);
+}
+
+.header__theme-menu-button {
+  color: var(--color-for-button, #FF0070)
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  outline: 1px solid var(--color-for-button,#FF0070);
+}
+
+.decorated-item__circle {
+  background-color: var(--accent-color, #FF0070 );
+  filter: drop-shadow(0px 0px 4px #FF0070);
 }
