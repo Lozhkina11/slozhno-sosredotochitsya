@@ -53,16 +53,16 @@
 
 }
 
-.page {
-  background-color: var(--background-color);
+/* .page {
+  /* background-color: var(--background-color); */
   /* background-image: url(/images/cover-image-dark.png); */
-}
 
-.page.theme_dark .header {
+
+/* .page.theme_dark .header {
   background-image: url(/images/cover-image-dark.png);
   background-position: center;
   block-size: center;
-}
+} */
 
 .main__title {
   text-shadow: 4px 4px 0px var(--color-for-shadow,  #FF0070);
