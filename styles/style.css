@@ -288,11 +288,11 @@
   }
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .content-section {
     height: 100%;
   }
-}
+} */
 
 @media (max-width: 767px) {
   .section {
