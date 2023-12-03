@@ -276,17 +276,17 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
   .content-section {
     height: 949px;
   }
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .content-section {
     height: 648px;
   }
-}
+} */
 
 /* @media (max-width: 1024px) {
   .content-section {
@@ -351,7 +351,11 @@
   line-height: 23.4px;
 }
 
-.content-section .content__text-block .text__title .content__paragraph:last-child {
+.content-section .content__text-block .content__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.advice-section .content__text-block .content__paragraph:last-child {
   margin-bottom: 0;
 }
 
