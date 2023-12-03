@@ -351,13 +351,40 @@
   line-height: 23.4px;
 }
 
+/* .attention__text-block .content__paragraph_block .content__paragraph:last-child {
+  margin-bottom: 20px;
+} */
+
+/* .advice-section .content__text-block .text__title:first-child {
+  margin-bottom: 20px;
+} */
+
+.advice-section .content__text-block .title__content {
+  margin-bottom: 10px;
+}
+
 .content-section .content__text-block .content__paragraph:last-child {
+  margin-bottom: 0;
+}
+/* .content-section .content__text-block .content__paragraph:last-child {
+  margin-bottom: 0;
+} */
+
+/* .attention__text-block .content__paragraph_block .content__paragraph:last-child {
+  margin-bottom: 0;
+} */
+
+/* .advice-section .content__text-block .content__paragraph {
+  margin-bottom: 0px;
+} */
+
+/* .advice-section .content__text-block .text__title:last-child {
   margin-bottom: 0;
 }
 
 .advice-section .content__text-block .content__paragraph:last-child {
   margin-bottom: 0;
-}
+} */
 
 .link {
   text-shadow: 2px 2px 0px var(--accent-color);
@@ -416,7 +443,7 @@
   width: 100%;
 }
 
-.content__paragraph_block {
+/* .content__paragraph_block {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
@@ -425,12 +452,26 @@
 }
 .content__paragraph_block:last-child {
   margin-right: 0;
-}
+} */
 
-.attention__text-block .content__paragraph_block .content__paragraph {
+.attention__text-block .content__paragraph {
   margin-bottom: 0;
 }
 
+/* .attention-section .attention__text-block.content__paragraph_block p {
+  margin-bottom: 20px;
+} */
+.attention-section .attention__text-block .content__paragraph_block p:last-child {
+  margin-bottom: 20px;
+}
+
+/* .attention-section .content__paragraph_block .content__paragraph {
+  margin-bottom: 20px;
+}
+
+.attention-section .attention__text-block .content__paragraph_block .content__paragraph:last-child {
+  margin-bottom: 0;
+} */
 
 /* .attention__text-block {
   flex-wrap: wrap;
@@ -450,14 +491,17 @@
   }
 }
 
+.advice-section .content__text-block .content__paragraph:last-child {
+  margin-bottom: 0;
+}
 
 .advice-section .section__title {
   margin-bottom: 20px;
 }
 
-.advice-section .content__text-block .text__title {
+/* .advice-section .content__text-block .text__title {
   margin-bottom: 20px;
-}
+} */
 
 .advice-section .content__text-block .text__title:last-child {
   margin-bottom: 0;
