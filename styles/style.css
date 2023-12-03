@@ -351,6 +351,10 @@
   line-height: 23.4px;
 }
 
+.content-section .content__text-block .text__title .content__paragraph:last-child {
+  margin-bottom: 0;
+}
+
 .link {
   text-shadow: 2px 2px 0px var(--accent-color);
   text-decoration: none;
@@ -419,13 +423,18 @@
   margin-right: 0;
 }
 
+.attention__text-block .content__paragraph_block .content__paragraph {
+  margin-bottom: 0;
+}
+
+
 /* .attention__text-block {
   flex-wrap: wrap;
 } */
 
 /* --------------треттья секция -------------------- */
 .advice-section {
-  margin-top: 60px;
+  margin-top: 80px;
   grid-template-areas: "section__title content__text-block content__text-block";
   /* min-height: 1015px; */
 }
@@ -437,25 +446,17 @@
   }
 }
 
-/* @media (min-width: 768px) {
-  .advice-section {
-    /* min-height: 1296px; */
-/* display: block;
-  }
-}  */
-
-/* @media (max-width: 1024px) {
-  .advice-section {
-    max-height: 1015px;
-  }
-} */
 
 .advice-section .section__title {
   margin-bottom: 20px;
 }
 
-.advice-section .content__text-block .text__title:first-child {
+.advice-section .content__text-block .text__title {
   margin-bottom: 20px;
+}
+
+.advice-section .content__text-block .text__title:last-child {
+  margin-bottom: 0;
 }
 
 .advice-section .content__text-block .text__title {
