@@ -441,6 +441,10 @@
 
 .attention__text-block .content__paragraph_block {
   width: 100%;
+  margin-right: 20px;
+}
+.attention__text-block .content__paragraph_block:last-child {
+  margin-right: 0;
 }
 
 /* .content__paragraph_block {
@@ -489,6 +493,10 @@
     /* min-height: 1015px; */
     margin-top: 50px;
   }
+}
+
+.advice-section .content__text-block h3:first-child {
+  margin-bottom: 20px;
 }
 
 .advice-section .content__text-block .content__paragraph:last-child {
