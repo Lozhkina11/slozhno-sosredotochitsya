@@ -490,9 +490,9 @@
   flex-wrap: wrap;
 } */
 
-/* --------------треттья секция -------------------- */
+/* --------------третья секция -------------------- */
 .advice-section {
-  margin-top: 80px;
+  margin-top: 60px;
   grid-template-areas: "section__title content__text-block content__text-block";
   /* min-height: 1015px; */
 }
