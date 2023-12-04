@@ -269,7 +269,11 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    height: 1024px;
+  }
+
   .box-text {
     width: 364px;
     margin-left: auto;
@@ -510,7 +514,7 @@
 @media (max-width: 375px) {
   .advice-section {
     /* min-height: 1015px; */
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 
