@@ -34,11 +34,6 @@
   );
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
-  .header {
-    height: 668px;
-  }
-}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .header {
@@ -167,10 +162,6 @@
   display: none;
 }
 
-/* .header__theme-menu-button:focus-visible {
-
-} */
-
 .theme_auto .decorated-item__text {
   display: none;
 }
@@ -198,11 +189,6 @@
   margin-left: 0;
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
-  .main__title {
-    font-size: (7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .main__title {
@@ -221,6 +207,8 @@
   .header__theme-menu {
     margin-top: 140px;
   }
+
+ 
 }
 
 /* @media (min-width: 375px) and (max-width: 768px) {
@@ -247,17 +235,62 @@
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
+  .header {
+    height: 668px;
+  }
+
   .box-text {
     width: 355px;
     margin: 0;
   }
+
+  .main__title {
+    font-size: (7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .box-title {
+    margin-left: 0;
+  }
+
+  .header::before,
+  .footer-section::before {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .header::after,
+  .footer-section::after {
+    bottom: 10px;
+    left: 10px;
+  }
+ 
+  .decorated-item {
+    right: 10px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 768px) {
   .box-text {
     width: 364px;
     margin-left: auto;
   }
+
+  .header::before,
+  .footer-section::before {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .header::after,
+  .footer-section::after {
+    bottom: 20px;
+    left: 20px;
+  }
+ 
+  .decorated-item {
+    right: 20px;
+  }
+
 }
 
 .section__title {
@@ -366,14 +399,6 @@
   line-height: 23.4px;
 }
 
-/* .attention__text-block .content__paragraph_block .content__paragraph:last-child {
-  margin-bottom: 20px;
-} */
-
-/* .advice-section .content__text-block .text__title:first-child {
-  margin-bottom: 20px;
-} */
-
 .advice-section .content__text-block .title__content {
   margin-bottom: 10px;
 }
@@ -381,25 +406,6 @@
 .content-section .content__text-block .content__paragraph:last-child {
   margin-bottom: 0;
 }
-/* .content-section .content__text-block .content__paragraph:last-child {
-  margin-bottom: 0;
-} */
-
-/* .attention__text-block .content__paragraph_block .content__paragraph:last-child {
-  margin-bottom: 0;
-} */
-
-/* .advice-section .content__text-block .content__paragraph {
-  margin-bottom: 0px;
-} */
-
-/* .advice-section .content__text-block .text__title:last-child {
-  margin-bottom: 0;
-}
-
-.advice-section .content__text-block .content__paragraph:last-child {
-  margin-bottom: 0;
-} */
 
 .link {
   text-shadow: 2px 2px 0px var(--accent-color);
@@ -441,15 +447,9 @@
     box-sizing: border-box;
   }
 
-  /* .attention__text-block .content__paragraph {
-    margin-bottom: 20px;
-  }
-
-  .attention__text-block .content__paragraph:last-child {
-    margin-bottom: 0;
-  } */
-
 }
+
+
 
 @media (max-width: 375px) {
   .attention-section {
@@ -476,12 +476,7 @@
   margin-right: 0;
 } */
 
-@media (min-width:768px) {
-  .attention__text-block .content__paragraph {
-    margin-bottom: 0;
-}
   
-}
 /* .attention__text-block .content__paragraph {
   
 } */
@@ -600,6 +595,7 @@
   .portfolio_pics {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 
   .portfolio_pics div {
