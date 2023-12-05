@@ -4,7 +4,7 @@
   переключая тему
 */
 :root.theme_light {
-  --color-for-shadow: #FF0070;
+  --color-for-shadow:#FF8DCB;
   --accent-color: #ff8dcb;
   --main-color-for-title: #FFC2E6;
   --text-color: #353430;
@@ -16,7 +16,7 @@
 
 @media (prefers-color-scheme: light) {
   :root{
-    --color-for-shadow: #FF0070;
+    --color-for-shadow: #FF8DCB;
     --accent-color: #ff8dcb;
     --main-color-for-title: #FFC2E6;
     --text-color: #353430;
@@ -32,7 +32,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  --color-for-shadow: #FF0070;
+  --color-for-shadow: #FF8DCB;
   --accent-color: #ff8dcb;
   --main-color-for-title: #FFC2E6;
   --text-color: #353430;
@@ -48,7 +48,7 @@
   */
 
 .main__title {
-  text-shadow: 4px 4px 0px var(--color-for-shadow,  #FF0070);
+  text-shadow: 4px 4px 0px var(--color-for-shadow, #FF8DCB);
   color: var(--main-color-for-title, #FFC2E6);
 }
 
