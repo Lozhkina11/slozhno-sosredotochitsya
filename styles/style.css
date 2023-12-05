@@ -282,14 +282,14 @@
 
 /* ---------------------первая секция--------------------- */
 .content-section {
-  margin-top: calc(40px + (60 - 40) * (100vw - 375px) / (1024 - 375));
+ 
   grid-template-areas: "section__title content__text-block content__text-block";
   max-width: 100%;
   min-height: 508px;
   box-sizing: border-box;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 375px) {
   .section {
     display: flex;
     flex-direction: column;
@@ -368,7 +368,7 @@
 
 /* -------------------вторая секция --------------------------*/
 .attention-section {
-  margin-top: 80px;
+
   grid-template-areas:
     "section__title . . "
     "text__title . ."
@@ -386,6 +386,9 @@
 }
 
 @media (max-width: 375px) {
+  .header {
+    margin-bottom: 40px;
+  }
   .header,
   .footer-section {
     padding: 10px;
@@ -393,6 +396,7 @@
   .section {
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 50px;
   }
 }
 
@@ -406,11 +410,17 @@
   .content-section__title {
     width: 236px;
   }
+
 }
 
 @media (max-width: 1024px) {
-  .attention-section {
-    margin-top: 50px;
+  .header {
+    margin-bottom: 60px;
+  }
+  .section {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 80px;
   }
 }
 
@@ -421,20 +431,19 @@
 .attention__text-block .content__paragraph_block:last-child {
   margin-right: 0;
 }
+.attention__text-block .content__paragraph_block:last-child .content__paragraph {
+  margin-bottom: 0;
+}
+
 
 /* --------------третья секция -------------------- */
 .advice-section {
-  margin-top: 80px;
+  
   grid-template-areas: "section__title content__text-block content__text-block";
   /* min-height: 1015px; */
 }
 
-@media (max-width: 375px) {
-  .advice-section {
-    /* min-height: 1015px; */
-    margin-top: 50px;
-  }
-}
+
 
 .advice-section .content__text-block h3:first-child {
   margin-bottom: 20px;
@@ -462,7 +471,7 @@
 /* -------------------четвертая секция----------------- */
 .portfolio_pics {
   box-sizing: border-box;
-  margin-top: 80px;
+ 
   grid-template-areas: "section__title section__title section__title";
 }
 
@@ -475,7 +484,7 @@
 @media (max-width: 375px) {
   .pic-section {
     height: 100%;
-    margin-top: 50px;
+ 
   }
 }
 
