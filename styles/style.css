@@ -1,5 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: var(--main-font, monospace);
@@ -282,18 +283,10 @@
 
 /* ---------------------первая секция--------------------- */
 .content-section {
- 
   grid-template-areas: "section__title content__text-block content__text-block";
   max-width: 100%;
   min-height: 508px;
   box-sizing: border-box;
-}
-
-@media (max-width: 375px) {
-  .section {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .content-section__title {
@@ -368,7 +361,6 @@
 
 /* -------------------вторая секция --------------------------*/
 .attention-section {
-
   grid-template-areas:
     "section__title . . "
     "text__title . ."
@@ -385,7 +377,8 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 375px) {
+
+@media (max-width: 767px) {
   .header {
     margin-bottom: 40px;
   }
@@ -394,13 +387,13 @@
     padding: 10px;
   }
   .section {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .attention__text-block {
     display: flex;
     flex-direction: column;
@@ -410,10 +403,14 @@
   .content-section__title {
     width: 236px;
   }
-
+  .section {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+  }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .header {
     margin-bottom: 60px;
   }
@@ -431,19 +428,17 @@
 .attention__text-block .content__paragraph_block:last-child {
   margin-right: 0;
 }
-.attention__text-block .content__paragraph_block:last-child .content__paragraph {
+.attention__text-block
+  .content__paragraph_block:last-child
+  .content__paragraph {
   margin-bottom: 0;
 }
 
-
 /* --------------третья секция -------------------- */
 .advice-section {
-  
   grid-template-areas: "section__title content__text-block content__text-block";
   /* min-height: 1015px; */
 }
-
-
 
 .advice-section .content__text-block h3:first-child {
   margin-bottom: 20px;
@@ -471,7 +466,7 @@
 /* -------------------четвертая секция----------------- */
 .portfolio_pics {
   box-sizing: border-box;
- 
+
   grid-template-areas: "section__title section__title section__title";
 }
 
@@ -484,7 +479,6 @@
 @media (max-width: 375px) {
   .pic-section {
     height: 100%;
- 
   }
 }
 
