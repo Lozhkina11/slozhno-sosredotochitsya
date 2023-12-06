@@ -369,11 +369,11 @@
   margin-right: 0;
 }
 
-.attention__text-block
+/* .attention__text-block
   .content__paragraph_block:last-child
   .content__paragraph {
   margin-bottom: 0;
-}
+} */
 
 /* --------------третья секция -------------------- */
 .advice-section {
