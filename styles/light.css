@@ -17,7 +17,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root{
+  :root {
     --color-for-shadow: #FF8DCB;
     --accent-color: #ff8dcb;
     --main-color-for-title: #FFC2E6;
@@ -46,7 +46,6 @@
   --background-color: #FFF1F7;
   background-color: var(--background-color);
   --color-for-button: #353430;
-  
 }
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -57,12 +56,6 @@
   text-shadow: 4px 4px 0px var(--color-for-shadow, #FF8DCB);
   color: var(--main-color-for-title, #FFC2E6);
 }
-
-/* .page.theme_light .header {
-  background-image: url(/images/cover-image-light.png);
-  background-position: center;
-  block-size: center;
-} */
 
 .text__title {
   background-color: var(--accent-color,#ff8dcb);
