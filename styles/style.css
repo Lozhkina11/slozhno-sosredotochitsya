@@ -260,7 +260,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   box-sizing: border-box;
-  max-width: 100%;
+  max-width: 1024px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -605,7 +605,7 @@
   .header__theme-menu-list {
     flex-direction: column;
   }
-  
+
   .header__theme-menu {
     margin-top: 140px;
   }
