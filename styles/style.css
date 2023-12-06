@@ -310,24 +310,18 @@
 
 /* -------------------четвертая секция----------------- */
 .portfolio_pics {
+  display: grid;
+  box-sizing: border-box;
+  gap: clamp(10px, 5vw, 20px);
   box-sizing: border-box;
   grid-template-areas: "section__title section__title section__title";
 }
 
 .portfolio_pics h3 {
-  grid-column: span 1;
+  /* grid-column: span 1; */
   grid-column: 1/4;
   grid-row: 1;
-}
-
-.portfolio_pics h3 {
   margin-bottom: 0;
-}
-
-.portfolio_pics {
-  display: grid;
-  box-sizing: border-box;
-  gap: clamp(10px, 5vw, 20px);
 }
 
 .portfolio_pics div:nth-child(2) {
@@ -363,14 +357,11 @@
 
 /* ----------подвал-------------- */
 .footer-section {
-  min-height: 667px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  min-height: 668px;
-  height: 100vh;
 }
 
 .footer {
