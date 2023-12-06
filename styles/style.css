@@ -178,24 +178,9 @@
   margin-left: 0;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .main__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-}
 
-@media (max-width: 768px) {
-  .header__theme-menu-list {
-    flex-direction: column;
-  }
-  .decorated-block {
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
-  .header__theme-menu {
-    margin-top: 140px;
-  }
-}
+
+
 
 .box-title {
   display: flex;
@@ -244,7 +229,7 @@
   }
 } */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+/* @media (min-width: 768px) and (max-width: 1024px) { */
   /* .box-text {
     width: 364px;
     margin-left: auto;
@@ -265,7 +250,6 @@
   .decorated-item {
     right: 20px;
   } */
-}
 
 .section__title {
   color: var(--accent-color);
@@ -292,7 +276,7 @@
 .content-section__title {
   grid-column: span 1;
   grid-area: section__title;
-  max-width: 100%;
+  min-width: 100%;
 }
 
 .content__text-block {
@@ -404,9 +388,9 @@
   margin-bottom: 0;
 }
 
-.advice-section .section__title {
+/* .advice-section .section__title {
   margin-bottom: 20px;
-}
+} */
 
 .advice-section .content__text-block .text__title:last-child {
   margin-bottom: 0;
@@ -512,17 +496,31 @@
   .section {
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
   }
-  
+
+  .header__theme-menu-list {
+    flex-direction: column;
+  }
+
+  .decorated-block {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .header__theme-menu {
+    margin-top: 76px;
+  }
+
   .box-text {
     width: 355px;
     margin: 0;
   }
 
   .main__title {
-    font-size: (7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .box-title {
@@ -556,14 +554,27 @@
     gap: 10px;
   }
 
+  .attention__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+
   /* .pic-section {
     height: 100%; /* Высота для экрана 768x1024px */
   
-
+  /* .content-section__title {
+    width: 100%;
+  } */
 
 }
 
 @media (max-width: 1023px) {
+  .main__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .box-text {
     width: 364px;
     margin-left: auto;
@@ -579,6 +590,10 @@
   .footer-section::after {
     bottom: 20px;
     left: 20px;
+  }
+
+  .header__theme-menu {
+    margin-top: 140px;
   }
 
   .decorated-item {
@@ -599,7 +614,7 @@
   .section {
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 
   .pic-section {
@@ -619,5 +634,9 @@
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 80px;
+  }
+
+  .content-section__title {
+    width: 315px;
   }
 }
