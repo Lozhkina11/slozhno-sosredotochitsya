@@ -258,7 +258,7 @@
 .section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  /* gap: 20px; */
   box-sizing: border-box;
   max-width: 1024px;
   padding-right: 20px;
@@ -271,12 +271,14 @@
   max-width: 100%;
   min-height: 508px;
   box-sizing: border-box;
+  
 }
 
 .content-section__title {
   grid-column: span 1;
   grid-area: section__title;
   min-width: 100%;
+  margin-bottom: 20px;
 }
 
 .content__text-block {
@@ -349,6 +351,7 @@
     "section__title . . "
     "text__title . ."
     "content__paragraph . .";
+
 }
 
 .attention__text-block {
@@ -372,6 +375,7 @@
 
 /* --------------третья секция -------------------- */
 .advice-section {
+  gap: 20px;
   grid-template-areas: "section__title content__text-block content__text-block";
 }
 
@@ -615,6 +619,11 @@
     right: 20px;
   }
 
+  .content-section {
+    gap: 20px;
+
+  }
+  
   .attention__text-block {
     display: flex;
     flex-direction: column;
