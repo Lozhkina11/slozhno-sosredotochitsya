@@ -313,7 +313,6 @@
   display: grid;
   box-sizing: border-box;
   gap: clamp(10px, 5vw, 20px);
-  box-sizing: border-box;
   grid-template-areas: "section__title section__title section__title";
 }
 
