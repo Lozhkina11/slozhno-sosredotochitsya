@@ -10,6 +10,7 @@
   --title-color: #000028;
   --text-color: #f1b2ce;
   --main-color-for-title: #db00ff;
+  --background-color: #000028;
   --color-for-button: #ff0070;
   --hover: rgba(255, 0, 112, 0.4);
   --section-title: #ff0070;
@@ -23,6 +24,7 @@
     --title-color: #000028;
     --text-color: #f1b2ce;
     --main-color-for-title: #db00ff;
+    --background-color: #000028;
     --color-for-button: #ff0070;
     --hover: rgba(255, 0, 112, 0.4);
     --section-title: #ff0070;
@@ -58,9 +60,9 @@
   --color-for-button: #ff0070;
   --section-title: #ff0070;
   --color-for-decor-items: #ff0070;
-  background-image: url(/images/cover-image-dark.png);
+  background-image: url(/images/cover-image-dark.png), var(--background-color);
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
