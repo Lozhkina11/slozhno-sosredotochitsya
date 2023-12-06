@@ -369,11 +369,6 @@
   margin-right: 0;
 }
 
-/* .attention__text-block
-  .content__paragraph_block:last-child
-  .content__paragraph {
-  margin-bottom: 0;
-} */
 
 /* --------------третья секция -------------------- */
 .advice-section {
@@ -571,6 +566,10 @@
 }
 
 @media (max-width: 1023px) {
+  .header {
+    margin-bottom: 60px;
+  }
+  
   .main__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -639,4 +638,11 @@
   .content-section__title {
     width: 315px;
   }
+
+  .attention__text-block
+  .content__paragraph_block:last-child
+  .content__paragraph {
+  margin-bottom: 0;
+}
+
 }
