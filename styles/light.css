@@ -45,11 +45,11 @@
 
 
 .page.theme_light {
-  /* background-image: url(/images/cover-image-light.png);
+  background-image: url(/images/cover-image-light.png);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  background-attachment: fixed; */
+  background-attachment: fixed; 
   --color-for-shadow: #FF8DCB;
   --accent-color: #ff8dcb;
   --main-color-for-title: #FFC2E6;

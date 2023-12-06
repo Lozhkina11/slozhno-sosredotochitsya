@@ -60,6 +60,7 @@
   --color-for-button: #ff0070;
   --section-title: #ff0070;
   --color-for-decor-items: #ff0070;
+  background-image: url(/images/cover-image-dark.png);
 }
 
 .main__title {
