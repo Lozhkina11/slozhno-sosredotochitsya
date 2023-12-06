@@ -37,6 +37,10 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
+  .page.theme_auto {
+    background-image: url(/images/cover-image-light.png);
+  }
 }
 
 

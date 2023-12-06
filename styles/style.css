@@ -17,6 +17,10 @@
   background-image: url(/images/cover-image-light.png);
 }
 
+/* .page.theme_auto {
+  background-image: url(/images/cover-image-dark.png);
+} */
+
 .header,
 .footer-section {
   position: relative;
