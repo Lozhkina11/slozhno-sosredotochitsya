@@ -602,6 +602,10 @@
     align-items: flex-start;
   }
 
+  .header__theme-menu-list {
+    flex-direction: column;
+  }
+  
   .header__theme-menu {
     margin-top: 140px;
   }
