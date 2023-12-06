@@ -478,7 +478,7 @@
 /* -------------медиа-запросы----------------  */
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header {
     margin-bottom: 40px;
   }
@@ -556,6 +556,10 @@
     box-sizing: border-box;
   }
 
+  .header__theme-menu {
+    margin-top: 140px;
+  }
+
   /* .pic-section {
     height: 100%; /* Высота для экрана 768x1024px */
   
@@ -569,7 +573,7 @@
   .header {
     margin-bottom: 60px;
   }
-  
+
   .main__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -591,9 +595,12 @@
     left: 20px;
   }
 
-  .header__theme-menu {
-    margin-top: 140px;
-  }
+  /* .decorated-block {
+    justify-content: flex-end;
+    align-items: flex-start;
+  } */
+
+  
 
   .decorated-item {
     right: 20px;
@@ -619,6 +626,12 @@
   .pic-section {
     height: 100%;
   }
+
+  .attention__text-block
+  .content__paragraph_block:last-child
+  .content__paragraph {
+  margin-bottom: 0;
+}
 }
 
 @media (min-width: 1024px) {
