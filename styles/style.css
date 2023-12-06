@@ -7,13 +7,16 @@
   font-size: 18px;
 
   box-sizing: border-box;
-  /* background-image: url(/images/cover-image.png); */
+  background-image: url(/images/cover-image-light.png);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
 }
+/* .page.theme_auto {
+  background-image: url(/images/cover-image-light.png);
+} */
 
 .header,
 .footer-section {
@@ -57,7 +60,6 @@
 .decorated-item__text {
   text-transform: capitalize;
   color: #ff0070;
-  /* content: "REC"; */
 }
 
 .header::before,
@@ -69,8 +71,8 @@
   right: 20px;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--color-for-decor-items);
+  border-right: 1px solid var(--color-for-decor-items);
 }
 
 .header::after,
@@ -78,14 +80,12 @@
   position: absolute;
   display: flex;
   content: "";
-
-  /* display: inline-block; */
   bottom: 20px;
   left: 20px;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color, #ff0070);
+  border-bottom: 1px solid var(--color-for-decor-items);
+  border-left: 1px solid var(--color-for-decor-items);
 }
 
 .decorated-item__circle {
@@ -248,7 +248,7 @@
   } */
 
 .section__title {
-  color: var(--accent-color);
+  color: var(--section-title);
 }
 
 .section {
@@ -256,7 +256,7 @@
   grid-template-columns: repeat(3, 1fr);
   /* gap: 20px; */
   box-sizing: border-box;
-  max-width: 1024px;
+  /* max-width: 1024px; */
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -515,7 +515,7 @@
   }
 
   .header__theme-menu {
-    margin-top: 76px;
+    margin-top: 66px;
   }
 
   .box-text {
@@ -626,7 +626,7 @@
   }
 
   .header__theme-menu {
-    margin-top: 140px;
+    margin-top: 173px;
   }
   
 
