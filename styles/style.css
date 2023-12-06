@@ -277,7 +277,7 @@
 .content-section__title {
   grid-column: span 1;
   grid-area: section__title;
-  min-width: 100%;
+  /* min-width: 100%; */
   margin-bottom: 20px;
 }
 
@@ -559,7 +559,9 @@
     align-items: flex-start;
     box-sizing: border-box;
   }
-
+  .content-section__title {
+    min-width: 100%;
+  }
  
 
   /* .pic-section {
@@ -623,7 +625,7 @@
     gap: 20px;
 
   }
-  
+
   .attention__text-block {
     display: flex;
     flex-direction: column;
