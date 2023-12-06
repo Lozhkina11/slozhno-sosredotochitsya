@@ -52,7 +52,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: var(--background-color)
+  background-color: var(--background-color);
   --color-for-shadow: #FF8DCB;
   --accent-color: #ff8dcb;
   --main-color-for-title: #FFC2E6;
