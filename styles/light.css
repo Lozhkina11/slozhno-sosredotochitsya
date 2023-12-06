@@ -9,7 +9,6 @@
   --main-color-for-title: #FFC2E6;
   --text-color: #353430;
   --hover: rgba(50, 49, 45, 0.40);
-  --background-color:#FFF1F7;
   --title-color:#353430;
   --color-for-button: #353430;
   --section-title: #353430;
@@ -23,7 +22,6 @@
     --main-color-for-title: #FFC2E6;
     --text-color: #353430;
     --hover: rgba(50, 49, 45, 0.40);
-    --background-color: #FFF1F7;
     --title-color:#353430;
     --color-for-button: #353430;
     --section-title: #353430;
@@ -49,14 +47,13 @@
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   --color-for-shadow: #FF8DCB;
   --accent-color: #ff8dcb;
   --main-color-for-title: #FFC2E6;
   --text-color: #353430;
   --hover: rgba(50, 49, 45, 0.40);
   --background-color: #FFF1F7;
-  background-color: var(--background-color);
   --color-for-button: #353430;
 }
   /* сохраните этот селектор в приведённом виде.
