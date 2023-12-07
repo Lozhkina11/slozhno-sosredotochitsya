@@ -33,7 +33,7 @@
   }
 
   .page.theme_dark {
-    background-color:var(--background-color);
+    background-color:var(--background-color, #000028);
     background-image: url(/images/cover-image-dark.png);
     background-size: cover;
     background-position: top center;
@@ -42,7 +42,7 @@
   }
 
   .page.theme_auto {
-    background-color:var(--background-color);
+    background-color:var(--background-color, #000028);
     background-image: url(/images/cover-image-dark.png);
     background-size: cover;
     background-position: top center;
@@ -67,7 +67,7 @@
   --color-for-button: #ff0070;
   --section-title: #ff0070;
   --color-for-decor-items: #ff0070;
-  background-color: var(--background-color);
+  background-color: var(--background-color, #000028);
   background-image: url(/images/cover-image-dark.png);
   background-size: cover;
   background-position: center center;
