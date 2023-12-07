@@ -10,17 +10,18 @@
   --title-color: #000028;
   --text-color: #f1b2ce;
   --main-color-for-title: #db00ff;
-  --background-color: #000533;
+  --background-color: #000028;
   --color-for-button: #ff0070;
   --hover: rgba(255, 0, 112, 0.4);
   --section-title: #ff0070;
   --color-for-decor-items: #ff0070;
+  --background-image-url: url('/images/cover-image-dark.png');
 }
 
 @media (prefers-color-scheme: dark) {
   .page.theme_dark {
-    background-color: var(--background-color, #000533);
-    background-image: url(/images/cover-image-dark.png);
+    background-color: var(--background-color, #000028);
+    background-image: var(--background-image-url);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -28,8 +29,8 @@
   }
 
   .page.theme_auto {
-    background-color: var(--background-color, #000533);
-    background-image: url(/images/cover-image-dark.png);
+    background-color: var(--background-color, #000028);
+    background-image: var(--background-image-url);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -44,13 +45,13 @@
   --title-color: #000028;
   --text-color: #f1b2ce;
   --main-color-for-title: #db00ff;
-  --background-color: #000533;
+  --background-color: #000028;
   --hover: rgba(255, 0, 112, 0.4);
   --color-for-button: #ff0070;
   --section-title: #ff0070;
   --color-for-decor-items: #ff0070;
-  background-color: var(--background-color, #000533);
-  background-image: url(/images/cover-image-dark.png);
+  background-color: var(--background-color, #000028);
+  background-image: var(--background-image-url);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
