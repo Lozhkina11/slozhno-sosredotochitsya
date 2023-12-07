@@ -31,34 +31,33 @@
   }
 
   .page.theme_light {
+    background-color:var(--background-color);
     background-image:url(/images/cover-image-light.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color:var(--background-color)
   }
 
   .page.theme_auto {
+    background-color: var(--background-color);
     background-image: url(/images/cover-image-light.png);
-    background-color: var(--background-color)
   }
 }
 
 
 .page.theme_light {
+  background-color: var(--background-color);
   background-image: url(/images/cover-image-light.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: var(--background-color);
   --color-for-shadow: #FF8DCB;
   --accent-color: #ff8dcb;
   --main-color-for-title: #FFC2E6;
   --text-color: #353430;
   --hover: rgba(50, 49, 45, 0.40);
-  
   --color-for-button: #353430;
 }
   /* сохраните этот селектор в приведённом виде.
