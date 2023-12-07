@@ -33,6 +33,7 @@
   .page.theme_light {
     background-color: var(--background-color, #fff1f7);
     background-image: url(/images/cover-image-light.png);
+    background: lightgray 50%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -42,6 +43,7 @@
   .page.theme_auto {
     background-color: var(--background-color, #fff1f7);
     background-image: url(/images/cover-image-light.png);
+    background: lightgray 50%;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -52,6 +54,7 @@
 .page.theme_light {
   background-color: var(--background-color, #fff1f7);
   background-image: url(/images/cover-image-light.png);
+  background: lightgray 50%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
