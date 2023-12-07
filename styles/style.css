@@ -13,18 +13,6 @@
   background-attachment: fixed;
   height: 100%;
 }
-/* 
-.page.theme_auto {
-  background-color: var(--background-color);
-  background-image: var(--background-image-url);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-} */
-
-/* .page.theme_auto {
-  background-image: url(/images/cover-image-dark.png);
-} */
 
 .header,
 .footer-section {
