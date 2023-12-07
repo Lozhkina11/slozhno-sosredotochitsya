@@ -10,7 +10,7 @@
   --title-color: #000028;
   --text-color: #f1b2ce;
   --main-color-for-title: #db00ff;
-  --background-color: #010028;
+  --background-color: #000533;
   --color-for-button: #ff0070;
   --hover: rgba(255, 0, 112, 0.4);
   --section-title: #ff0070;
@@ -19,7 +19,7 @@
 
 @media (prefers-color-scheme: dark) {
   .page.theme_dark {
-    background-color: var(--background-color, #010028);
+    background-color: var(--background-color, #000533);
     background-image: url(/images/cover-image-dark.png);
     background-size: cover;
     background-position: top center;
@@ -28,7 +28,7 @@
   }
 
   .page.theme_auto {
-    background-color: var(--background-color, #010028);
+    background-color: var(--background-color, #000533);
     background-image: url(/images/cover-image-dark.png);
     background-size: cover;
     background-position: top center;
@@ -44,12 +44,12 @@
   --title-color: #000028;
   --text-color: #f1b2ce;
   --main-color-for-title: #db00ff;
-  --background-color: #010028;
+  --background-color: #000533;
   --hover: rgba(255, 0, 112, 0.4);
   --color-for-button: #ff0070;
   --section-title: #ff0070;
   --color-for-decor-items: #ff0070;
-  background-color: var(--background-color, #010028);
+  background-color: var(--background-color, #000533);
   background-image: url(/images/cover-image-dark.png);
   background-size: cover;
   background-position: center center;
