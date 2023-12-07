@@ -16,6 +16,7 @@
   --section-title: #ff0070;
   --color-for-decor-items: #ff0070;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --accent-color: #ff0070;
@@ -43,6 +44,10 @@
   .page.theme_auto {
     background-color:var(--background-color);
     background-image: url(/images/cover-image-dark.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
@@ -62,6 +67,7 @@
   --color-for-button: #ff0070;
   --section-title: #ff0070;
   --color-for-decor-items: #ff0070;
+  background-color: var(--background-color);
   background-image: url(/images/cover-image-dark.png);
   background-size: cover;
   background-position: center center;
