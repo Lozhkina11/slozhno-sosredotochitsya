@@ -239,10 +239,6 @@
   line-height: 23.4px;
 }
 
-.advice-section .content__text-block .title__content {
-  margin-bottom: 10px;
-}
-
 .content-section .content__text-block .content__paragraph:last-child {
   margin-bottom: 0;
 }
@@ -299,8 +295,10 @@
 .advice-section .content__text-block h3 {
   margin-bottom: 0;
 }
+
 .advice-section .content__text-block .title__content {
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .advice-section .content__text-block .content__paragraph:last-child {
@@ -403,6 +401,7 @@
 
   .header__theme-menu-list {
     flex-direction: column;
+    gap: 13px;
   }
 
   .decorated-block {
@@ -423,9 +422,6 @@
     margin-left: 0;
   }
 
-  .header__theme-menu-list {
-    gap: 13px;
-  }
   .header::before,
   .footer-section::before {
     top: 10px;
@@ -526,7 +522,8 @@
   }
 
   .content-section__title {
-    min-width: 236px;
+    max-width: 236px;
+    width: 100%;
   }
 
   .section {
