@@ -437,6 +437,9 @@
   .decorated-item {
     right: 10px;
   }
+  .content__text-block {
+    max-width: 472px;
+  }
 
   .portfolio_pics {
     display: flex;
