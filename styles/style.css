@@ -299,7 +299,10 @@
 }
 
 .advice-section .content__text-block h3:first-child {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.advice-section .content__text-block .title__content:first-child {
+  margin-top: 10px;
 }
 
 .advice-section .content__text-block .content__paragraph:last-child {
@@ -310,13 +313,20 @@
   margin-bottom: 0;
 }
 
-.advice-section .content__text-block .text__title {
+.title__content {
   font-weight: 400;
 }
 
-.advice-section .content__text-block .text__title:first-child {
-  font-weight: 700;
+.advice-section .content__text-block article .content__paragraph {
+  margin-bottom: 10px;
 }
+
+.attention__text-block
+.content__paragraph_block:last-child
+.content__paragraph {
+margin-bottom: 0;
+}
+
 
 /* -------------------четвертая секция----------------- */
 .portfolio_pics {
