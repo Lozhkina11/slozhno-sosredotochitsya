@@ -47,6 +47,7 @@
   text-transform: uppercase;
   color: #ff0070;
   align-items: center;
+  display: none;
 }
 
 .decorated-item__text::after {
@@ -136,9 +137,7 @@
   border-bottom: 1px solid var(--hover);
 }
 
-.decorated-item__text {
-  display: none;
-}
+
 .decorated-item__circle {
   display: none;
 }
@@ -293,7 +292,7 @@
 
 /* --------------третья секция -------------------- */
 .advice-section {
-  /* gap: 20px; */
+  gap: 20px;
   grid-template-areas: "section__title content__text-block content__text-block";
 }
 
@@ -527,7 +526,7 @@
   }
 
   .content-section__title {
-    max-width: 236px;
+    min-width: 236px;
   }
 
   .section {
@@ -562,7 +561,7 @@
     padding-right: 20px;
     margin-bottom: 80px;
   }
-  
+
   .content-section__title {
     max-width: 315px;
   }
