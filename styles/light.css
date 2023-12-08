@@ -1,5 +1,5 @@
 .page.theme_light {
-  --background-image-url: url(/images/cover-image-light.png);
+  --background-image-url: url(../images/cover-image-light.png);
   --color-for-shadow: #ff8dcb;
   --accent-color: #ff8dcb;
   --main-color-for-title: #ffc2e6;
@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-image-url: url(/images/cover-image-light.png);
+    --background-image-url: url(../images/cover-image-light.png);
     --color-for-shadow: #ff8dcb;
     --accent-color: #ff8dcb;
     --main-color-for-title: #ffc2e6;
@@ -27,5 +27,16 @@
     --section-title: #353430;
     --color-for-decor-items: #353430;
     --title-text-color: #353430;
+    --border-for-link:#353430;
   }
+  /* .page.theme_light .decorated-item__text {
+    display: none;
+  }
+
+  .page.theme_light .decorated-item__circle {
+    display: none;
+  } */
 }
+
+
+

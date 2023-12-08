@@ -14,5 +14,6 @@
   --section-title: #FF0070;
   --color-for-decor-items: #FF0070;
   --background-color: #000028;
-  --background-image-url: url('/images/cover-image-dark.png');
+  --background-image-url: url('../images/cover-image-dark.png');
+  --border-for-link:#F1B2CE;
 }

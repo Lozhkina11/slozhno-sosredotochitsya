@@ -10,5 +10,17 @@
   --color-for-button: #ff0070;
   --section-title: #ff0070;
   --color-for-decor-items: #ff0070;
-  --background-image-url: url('/images/cover-image-dark.png');
+  --background-image-url: url('../images/cover-image-dark.png');
+  --border-for-link:#F1B2CE;
 }
+
+.page.theme_dark .decorated-item__text::after {
+  display: inline-block;
+}
+
+.page.theme_dark .decorated-item__text {
+  display: flex;
+}
+
+
+

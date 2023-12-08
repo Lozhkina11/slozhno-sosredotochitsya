@@ -7,11 +7,11 @@
     <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
@@ -55,12 +55,12 @@
         <h1 class="heading main__title">no focus</h1>
       </div>
       <div class="box-text">
-        <h3 class="heading text__title title-decor">
+        <p class="heading text__title title-decor">
           Что делать, когда не можешь делать ничего
           <br />
           Или почему нам так сложно сконцентрироваться, особенно когда очень
           надо
-        </h3>
+        </p>
       </div>
     </header>
     <main class="content">
@@ -71,7 +71,7 @@
           </h2>
         </div>
 
-        <div class="content__text-block">
+        <article class="content__text-block">
           <h3 class="heading text__title title-decor">Многозадачность</h3>
           <p class="content__paragraph">
             Особенно сложно сосредоточиться, когда задач много и все они —
@@ -81,10 +81,9 @@
             <a
               class="link"
               href="https://dana.org/article/multicosts-of-multitasking/"
-            >
-              выяснили
-            </a>
-            , что мозгу тяжело концентрироваться даже на двух делах
+              target="_blank"
+            >выяснили</a>,
+             что мозгу тяжело концентрироваться даже на двух делах
             одновременно. А когда в поле внимания попадает несколько важных
             задач, организм паникует и выделяет кортизол и адреналин — «гормоны
             стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро
@@ -101,7 +100,7 @@
             удовольствие. Получается замкнутый круг: чем больше отвлекаешься,
             тем больше удовольствия получаешь.
           </p>
-        </div>
+        </article>
       </section>
       <section class="attention-section section">
         <div class="content-section__title">
@@ -111,7 +110,7 @@
         </div>
 
         <div class="attention__text-block">
-          <div class="content__paragraph_block">
+          <article class="content__paragraph_block">
             <h3 class="heading text__title title-decor">Многозадачность</h3>
             <p class="content__paragraph">
               Как концентрация может снижаться из-за… концентрации? Любая
@@ -121,8 +120,8 @@
               собранными всё время — невозможно. Концентрация — мышца, и она
               может не выдержать, если не давать ей отдохнуть.
             </p>
-          </div>
-          <div class="content__paragraph_block">
+          </article>
+          <article class="content__paragraph_block">
             <h3 class="heading text__title title-decor">Еда</h3>
             <p class="content__paragraph">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
@@ -132,8 +131,8 @@
               углеводов» заканчивается, мы чувствуем усталость и сонливость. И
               хотим ещё больше быстрых углеводов.
             </p>
-          </div>
-          <div class="content__paragraph_block">
+          </article>
+          <article class="content__paragraph_block">
             <h3 class="heading text__title title-decor">Гаджеты</h3>
             <p class="content__paragraph">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
@@ -144,7 +143,9 @@
               Вот и получается, что чем больше времени мы проводим в гаджетах,
               тем больше времени затем нужно, чтобы вернуться к работе.
             </p>
-          </div>
+          </article>
+          
+       
         </div>
       </section>
       <section class="advice-section section">
@@ -159,9 +160,10 @@
           <h3 class="heading text__title title-decor">
             5 простых (на самом деле не очень) советов
           </h3>
-          <h3 class="heading text__title title-decor title__content">
+          <article>
+          <h4 class="heading text__title title-decor title__content">
             Представьте небо и облака
-          </h3>
+          </h4>
           <p class="content__paragraph">
             Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
             успокоиться. Ведь часто именно тревожные мысли о сложных задачах как
@@ -172,6 +174,8 @@
             вернуться в настоящий момент, а не волноваться о потенциальных
             проблемах из будущего.
           </p>
+        </article>
+        <article>
           <h3 class="heading text__title title-decor title__content">Включите музыку</h3>
           <p class="content__paragraph">
             Но не любую, и не любимую. Любимая может быть связана с сильными
@@ -179,21 +183,25 @@
             Подойдёт тихая, спокойная, умеренно-ритмичная. Можно вообще
             попробовать включить плейлист в «белым шумом» или нейромузыкой.
           </p>
+        </article>
+        <article>
           <h3 class="heading text__title title-decor title__content">Прогуляйтесь</h3>
           <p class="content__paragraph">
             Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
             <a
               class="link"
               href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
-            >
-              показал
-            </a>
-            , что созерцание природы повышает концентрацию, в то время как после
+              target="_blank"
+            >показал</a>,
+            
+             что созерцание природы повышает концентрацию, в то время как после
             просмотра городских пейзажей она наоборот понижается. Можно
             совместить прогулку с физическими упражнениями или бегом — так в
             мозг поступит ещё больше кислорода и он будет лучше работать. Но и
             простая двадцатиминутная прогулка — тоже отличный вариант.
           </p>
+        </article>
+        <article>
           <h3 class="heading text__title title-decor title__content">Хорошо ешьте</h3>
           <p class="content__paragraph">
             Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
@@ -201,6 +209,8 @@
             высоким содержанием клетчатки: овощи, ягоды, бобовые (нут, чечевица,
             фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
           </p>
+        </article>
+        <article>
           <h3 class="heading text__title title-decor title__content">Читайте</h3>
           <p class="content__paragraph">
             Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы
@@ -208,6 +218,8 @@
             секунд. А вот интересная книга способна затянуть и на несколько
             часов и круто тренирует направленное внимание.
           </p>
+        </article>
+
         </div>
       </section>
       <!-- <section class="pic-section section"> -->
@@ -282,7 +294,7 @@
       <!-- </section> -->
     </main>
     <footer class="footer-section">
-      <h4 class="footer main__title">focus</h4>
+      <h2 class="footer main__title">focus</h2>
     </footer>
 
     <script src="./scripts/script.js"></script>
