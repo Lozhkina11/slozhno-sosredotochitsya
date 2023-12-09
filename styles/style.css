@@ -36,13 +36,6 @@
 
 /* декоративный элемент */
 .decorated-item {
-  /* display: flex;
-  position: absolute;
-  align-items: baseline;
-  top: 20px;
-  right: 20px;
-  margin-right: 9px; */
-
   /* display: flex; */
   position: absolute;
   top: 20px;
@@ -55,7 +48,7 @@
   text-transform: uppercase;
   color: #ff0070;
   align-items: center;
-  /* display: none; */
+  display: none;
 }
 
 .decorated-item__text::after {
@@ -70,10 +63,8 @@
   display: none;
 }
 
-.header::before,
-.footer-section::before,
-.header::after,
-.footer-section::after {
+.quotes::before,
+.quotes::after {
   position: absolute;
   content: "";
   display: flex;
@@ -81,16 +72,14 @@
   height: 25px;
 }
 
-.header::before,
-.footer-section::before {
+.quotes::before {
   top: 20px;
   right: 20px;
   border-top: 1px solid var(--color-for-decor-items);
   border-right: 1px solid var(--color-for-decor-items);
 }
 
-.header::after,
-.footer-section::after {
+.quotes::after {
   bottom: 20px;
   left: 20px;
   border-bottom: 1px solid var(--color-for-decor-items);
@@ -436,20 +425,18 @@
     margin-left: 0;
   }
 
-  .header::before,
-  .footer-section::before {
+  .quotes::before {
     top: 10px;
     right: 10px;
   }
 
-  .header::after,
-  .footer-section::after {
+  .quotes::after {
     bottom: 10px;
     left: 10px;
   }
 
   .decorated-item {
-    right: 10px;
+    right: -9px;
     top: 10px;
   }
 
@@ -501,14 +488,12 @@
     margin-left: auto;
   }
 
-  .header::before,
-  .footer-section::before {
+  .quotes::before{
     top: 20px;
     right: 20px;
   }
 
-  .header::after,
-  .footer-section::after {
+  .quotes::after {
     bottom: 20px;
     left: 20px;
   }
@@ -615,5 +600,79 @@
 
   .portfolio_pics {
     margin-bottom: 60px;
+  }
+}
+
+/* ------------для темной темы----------- */
+
+.page.theme_dark .decorated-item__text::after {
+  display: inline-block;
+}
+
+.page.theme_dark .decorated-item {
+  position: absolute;
+  top: 10px;
+  right: -9px;
+  align-items: center;
+}
+
+
+.page.theme_dark .decorated-item__text {
+  display: flex;
+}
+
+@media (min-width: 767px) {
+  .page.theme_dark .decorated-item {
+    top: 20px;
+    right: 0;
+  }
+  .page.theme_auto .decorated-item {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    align-items: center;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #ff0070;
+    --color-for-shadow: #ff0070;
+    --main-font: "IBM Plex mono";
+    --title-color: #000028;
+    --text-color: #f1b2ce;
+    --main-color-for-title: #db00ff;
+    --background-color: #000028;
+    --hover: rgba(255, 0, 112, 0.4);
+    --color-for-focus: #ff0070;
+    --color-for-button: #ff0070;
+    --section-title: #ff0070;
+    --color-for-decor-items: #ff0070;
+    --background-image-url: url("../images/cover-image-dark.png");
+    --border-for-link: #f1b2ce;
+  }
+ 
+  .decorated-item__text::after {
+    display: inline-block;
+  }
+
+  .page.theme_auto .decorated-item__text {
+    display: flex;
+  }
+}
+
+/* ------------для светлой темы-------------- */
+.page.theme_light .decorated-item__text {
+  display: none;
+}
+
+.page.theme_light .decorated-item__text::after {
+  display: none;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .page.theme_light .decorated-item {
+    top: 20px;
   }
 }

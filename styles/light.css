@@ -11,6 +11,8 @@
   --section-title: #353430;
   --color-for-decor-items: #353430;
   --title-text-color: #353430;
+  --color-for-focus: #353430;
+  --border-for-link: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -21,7 +23,7 @@
     --main-color-for-title: #ffc2e6;
     --text-color: #353430;
     --hover: rgba(50, 49, 45, 0.4);
-    --color-for-focus: rgba(50, 49, 45, 0.40);
+    --color-for-focus: #353430;
     --background-color: #fff1f7;
     --title-color: #353430;
     --color-for-button: #353430;
@@ -32,16 +34,4 @@
   }
 }
 
-.page.theme_light .decorated-item__text {
-  display: none;
-}
 
-.page.theme_light .decorated-item__text::after {
-  display: none;
-}
-
-@media (min-width: 767px) and (max-width: 1023px) {
-  .page.theme_light .decorated-item {
-    top: 20px;
-  }
-}
