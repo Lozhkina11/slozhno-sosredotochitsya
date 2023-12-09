@@ -488,7 +488,7 @@
     margin-left: auto;
   }
 
-  .quotes::before{
+  .quotes::before {
     top: 20px;
     right: 20px;
   }
