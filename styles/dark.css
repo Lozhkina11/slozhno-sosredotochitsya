@@ -40,6 +40,10 @@
   }
 }
 
+.page.theme_dark .decorated-item {
+  display: inline-block;
+}
+
 .page.theme_dark .decorated-item__text::after {
   display: inline-block;
 }

@@ -33,7 +33,9 @@
     --border-for-link: #353430;
   }
 }
-
+.page.theme_light .decorated-item {
+  display: none;
+}
 .page.theme_light .decorated-item__text {
   display: none;
 }
